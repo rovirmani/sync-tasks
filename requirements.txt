@@ -1,0 +1,6 @@
+google-auth-oauthlib>=0.4.6
+google-api-python-client>=2.86.0
+notion-client>=1.0.0
+python-dotenv>=1.0.0
+fastapi==0.109.0
+uvicorn[standard]==0.27.0

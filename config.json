@@ -1,0 +1,21 @@
+{
+    "google_tasks": {
+        "lists": [
+            {
+                "name": "Daily Tasks",
+                "env_list_id": "GOOGLE_TASKS_CAREER_LIST_ID",
+                "env_notion_db_id": "NOTION_DAILY_DB_ID"
+            },
+            {
+                "name": "Career/Long Term Goals",
+                "env_list_id": "GOOGLE_TASKS_GOALS_LIST_ID",
+                "env_notion_db_id": "NOTION_CAREER_DB_ID"
+            }
+        ]
+    },
+    "notion": {
+        "status_column": "Status",
+        "due_date_column": "Due Date",
+        "task_id_column": "GoogleTaskId"
+    }
+}
