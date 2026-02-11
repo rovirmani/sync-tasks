@@ -35,28 +35,36 @@ sync-tasks/
 
 ## Development Commands
 
+### Python/uv Commands
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Install/sync dependencies
+uv sync
 
-# Run sync manually
-python sync.py
+# Add new dependency
+uv add <package>
 
-# Start webhook server
-python server.py
-# or
-uvicorn server:app --reload
+# Add dev dependency
+uv add --dev <package>
 
-# Create Google Tasks webhook
-python create_webhook.py
-
-# Cron job (hourly sync)
-# 0 * * * * cd /path/to/sync-tasks && python sync.py
-
-# Docker
-docker build -t sync-tasks .
-docker run sync-tasks
+# Run Python files
+uv run python <file.py>
 ```
+
+### Code Quality (ruff)
+```bash
+# Format code
+uv run ruff format .
+
+# Check linting
+uv run ruff check .
+
+# Auto-fix linting issues
+uv run ruff check --fix .
+
+# Format and lint together
+uv run ruff format . && uv run ruff check --fix .
+```
+
 
 ## Environment & Config
 
